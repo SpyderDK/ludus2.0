@@ -1,47 +1,28 @@
-<html>
-    <head>
-        <title></title>
-    </head>
-    <body>
+<?php
 
-        <?php
+    /*   While-loop eksempel
+    $tal = 0;
 
-            $tal = 15;
-            $tal2 = 13;
-            $tal3 = 14;
+    while ($tal < 100) {
+        echo $tal += 10;
+        echo "<br>";
+    }
+    */
 
-            /*
-            echo $tal;
-            echo "<br>";
+    //Robot øvelse
 
-            echo $tal2;
-            echo "<br>";
+    $money = 0;
+    $paycheck = 5;
+    $robotCost = 100;
 
-            echo $tal3;
-            echo "<br>";
+    while ($money < 100) {
+        $money += $paycheck;
+        echo $money;
+        echo "<br>";
+    }
 
-            echo "$tal er  et tal";
-            echo '$tal er et tal';
-            */
+    if($money = 100) {
+        echo "Nu kan du købe robotten!";
+    }
 
-            switch($tal)    {
-                case 12:
-                    echo "12";
-                break;
-
-                case 13:
-                    echo "13";
-                break;
-
-                case 14:
-                    echo "14";
-                break;
-
-                default:
-                    echo "Fejl";
-                break;
-            }
-        ?>
-
-    </body>
-</html>
+?>

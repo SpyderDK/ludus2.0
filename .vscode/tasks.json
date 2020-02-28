@@ -4,5 +4,5 @@
     "windows": {
         "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
     },
-    "args": ["localhost\\${workspaceRootFolderName}\\${fileBasename}"]
+    "args": ["localhost\\${workspaceRootFolderName}\\${fileBasename}"],
 }
