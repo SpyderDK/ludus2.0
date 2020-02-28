@@ -11,6 +11,7 @@
 
     //Robot øvelse
 
+    /*
     $money = 0;
     $paycheck = 5;
     $robotCost = 100;
@@ -23,6 +24,17 @@
 
     if($money = 100) {
         echo "Nu kan du købe robotten!";
+    }
+    */
+
+    // For-loop øvelse
+    for ($i=0; $i <= 1000; $i++) { 
+        $tilbage = $i % 2;
+
+        if ($tilbage == 0) {
+            echo $i;
+            echo "<br>";
+        }
     }
 
 ?>
