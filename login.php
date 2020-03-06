@@ -13,7 +13,7 @@
         <div style="text-align: center">
             <img src="media\logo.png" alt="Logo til SkoleIntra" />
         </div>
-        <div style="text-align: center">
+        <div style="text-align: center; color: #56be88">
             <h2>Log Ind</h2>
         </div>
         <div style="text-align: center">
@@ -26,7 +26,7 @@
             <button>Log Ind</button>
         </div>
     </div>
-    
+
 </body>
 
 </html>
