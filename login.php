@@ -17,13 +17,18 @@
             <h2>Log Ind</h2>
         </div>
         <div style="text-align: center">
-            <input type="Brugernavn">
-            <br>
-            <input type="Kodeord">
-        </div>
-        <br>
-        <div style="text-align: center">
-            <button>Log Ind</button>
+            <form id="Brugernavn" action="#" method="post">
+                <input type="text">
+                <br>
+                <input type="password">
+                <br>
+                <div style="color: #ffffff">
+                    <input type="checkbox" value="husk kode" name="husk kode" id="husk kode">
+                    <label for="husk kode">Husk Kodeord?</label>
+                </div>
+                <br>
+                <input type="submit" value="Log Ind">
+            </form>
         </div>
     </div>
 
