@@ -80,4 +80,3 @@
     echo $papir["A4"];
 
     print_r($papir);
-?>
