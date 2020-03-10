@@ -16,9 +16,9 @@
         <div style="text-align: center">
             <img src="./media/logo.png" alt="Logo til SkoleIntra">
         </div>
-        <div style="background-color: #DFE1E6; width: 400px; margin-right: auto; margin-left: auto">
-            <div style="text-align: center; color: #56be88">
-                <h2 style="font-size: 40px">Log Ind</h2>
+        <div style="background-color: #DFE1E6; width: 400px; height: 170px; margin-right: auto; margin-left: auto">
+            <div style="text-align: center">
+                <h1>Log Ind</h1>
             </div>
             <div style="text-align: center">
                 <form id="Brugernavn" action="#" method="post">

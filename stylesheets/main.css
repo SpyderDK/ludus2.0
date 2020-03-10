@@ -1,7 +1,18 @@
-h2 {
+h1 {
   font-family: Rubik;
+  color: #56be88;
+  font-size: xx-large;
+  /* Header 1 bruges til grønne overskrifter */
+}
+
+h2 {
+    font-family: Rubik;
+    color: white;
+    font-size: xx-large;
+    /* Header 2 bruges til hvide overskrifter. Har samme størrelse som header 1 */
 }
 
 body {
   background-color: #232443;
+  /* Standard farve til baggrund */
 }
