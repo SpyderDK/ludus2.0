@@ -12,17 +12,17 @@
 
 <body>
 
-    <div>
-        <div style="text-align: center">
+        <div id="logo">
             <img src="./media/logo.png" alt="Logo til SkoleIntra">
         </div>
-        <div style="background-color: #DFE1E6; width: 400px; height: 170px; margin-right: auto; margin-left: auto">
-            <div style="text-align: center">
+        <div id="loginboks">
+            <div>
                 <h1>Log Ind</h1>
             </div>
-            <div style="text-align: center">
-                <form id="Brugernavn" action="#" method="post">
+            <div>
+                <form id="logind" action="#" method="post">
                     <input type="text" autofocus placeholder="Brugernavn" required>
+                    <br>
                     <br>
                     <input type="password" placeholder="Adgangskode" required>
                     <br>
@@ -35,7 +35,6 @@
                 </form>
             </div>
         </div>
-    </div>
 
 </body>
 

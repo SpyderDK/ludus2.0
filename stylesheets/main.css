@@ -2,17 +2,39 @@ h1 {
   font-family: Rubik;
   color: #56be88;
   font-size: xx-large;
-  /* Header 1 bruges til grønne overskrifter */
+  /* Standard header med farven grøn og skrifttypen Rubik */
 }
 
-h2 {
+p {
   font-family: Rubik;
-  color: white;
-  font-size: xx-large;
-  /* Header 2 bruges til hvide overskrifter. Har samme størrelse som header 1 */
+  color: #56be88;
+  /* Standard paragraf med farven grøn og skrifttypen Rubik */
 }
 
 body {
   background-color: #232443;
   /* Standard farve til baggrund */
+}
+
+#loginboks {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  margin: auto;
+  background-color: #dfe1e6;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-radius: 12px;
+  border-width: 4px;
+  border-right-color: #C3C5CB;
+  border-bottom-color: #C3C5CB;
+}
+
+#logo {
+  text-align: center;
+}
+
+input {
+  border-radius: 12px;
+  font-size: large;
 }
