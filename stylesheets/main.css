@@ -6,10 +6,10 @@ h1 {
 }
 
 h2 {
-    font-family: Rubik;
-    color: white;
-    font-size: xx-large;
-    /* Header 2 bruges til hvide overskrifter. Har samme størrelse som header 1 */
+  font-family: Rubik;
+  color: white;
+  font-size: xx-large;
+  /* Header 2 bruges til hvide overskrifter. Har samme størrelse som header 1 */
 }
 
 body {
