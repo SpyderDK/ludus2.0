@@ -3,20 +3,22 @@
 
 <head>
     <title>Log på SkoleIntra</title>
-    <meta charset="utf-8" />
-    <meta name="description" content="Log ind side til SkoleIntra" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Log på SkoleIntra">
     <link rel="shortcut icon" type="image/x-icon" href="./media/icon 48x48.ico">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
 </head>
 
 <body>
 
-    <div style="background-color: #232443">
+    <div>
         <div style="text-align: center">
-            <img src="./media/logo.png" alt="Logo til SkoleIntra" />
+            <img src="./media/logo.png" alt="Logo til SkoleIntra">
         </div>
         <div style="background-color: #DFE1E6; width: 400px; margin-right: auto; margin-left: auto">
             <div style="text-align: center; color: #56be88">
-                <h2>Log Ind</h2>
+                <h2 style="font-size: 40px">Log Ind</h2>
             </div>
             <div style="text-align: center">
                 <form id="Brugernavn" action="#" method="post">
