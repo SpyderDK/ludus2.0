@@ -5,6 +5,7 @@
     <title>Log på SkoleIntra</title>
     <meta charset="utf-8" />
     <meta name="description" content="Log ind side til SkoleIntra" />
+    <link rel="shortcut icon" type="image/x-icon" href="./media/icon 48x48.ico">
 </head>
 
 <body>
