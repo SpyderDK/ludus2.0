@@ -1,0 +1,66 @@
+body {
+  background-color: #232443;
+  font-family: Rubik;
+  /* Standard skrifttype og baggrundsfarve */
+}
+
+h1 {
+  color: #56be88;
+  font-size: xx-large;
+  /* Standard header med farven grøn og skrifttypen Rubik */
+}
+
+p {
+  color: #56be88;
+  /* Standard paragraf med farven grøn og skrifttypen Rubik */
+}
+
+#loginboks {
+  width: 400px;
+  height: 220px;
+  text-align: center;
+  margin: auto;
+  background-color: #dfe1e6;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-radius: 12px;
+  border-width: 6px;
+  border-right-color: #c3c5cb;
+  border-bottom-color: #c3c5cb;
+  /* Formatering til loginboksen */
+}
+
+#logo {
+  text-align: center;
+}
+
+input.inputtekst {
+  border-radius: 16px;
+  font-size: large;
+  height: 30px;
+  border-style: none;
+  padding-left: 10px;
+  /* Formatering til tekstfelter */
+}
+
+input.inputknap {
+  border-radius: 16px;
+  font-size: large;
+  width: 200px;
+  height: 30px;
+  background-color: #56be88;
+  color: #dfe1e6;
+  border-style: none;
+  font-family: Rubik;
+  /* Formatering til knap */
+}
+
+.inputknap:hover {
+  background-color: #4CA778;
+  /* Farve til når mus er over knap */
+}
+
+.inputknap:focus {
+    background-color: #39845D;
+    /* Farve når man klikker på knap */
+}
