@@ -1,11 +1,11 @@
 body {
-  background-color: #232443;
+  background-color: #f8f9fb;
   font-family: Rubik;
   /* Standard skrifttype og baggrundsfarve */
 }
 
 h1 {
-  color: #56be88;
+  color: #0168ff;
   font-size: xx-large;
   /* Standard header med farven grøn og skrifttypen Rubik */
 }
@@ -17,21 +17,23 @@ p {
 
 #loginboks {
   width: 400px;
-  height: 220px;
+  height: auto;
   text-align: center;
   margin: auto;
-  background-color: #dfe1e6;
-  border-right-style: solid;
-  border-bottom-style: solid;
+  background-color: #FDFDFD;
   border-radius: 12px;
-  border-width: 6px;
-  border-right-color: #c3c5cb;
-  border-bottom-color: #c3c5cb;
+  box-shadow: 1px 1px 3px #c9c9c9;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  padding-left: 30px;
+  padding-right: 30px;
   /* Formatering til loginboksen */
 }
 
 #logo {
   text-align: center;
+  max-width: 100%;
+  height: auto;
 }
 
 input.inputtekst {
@@ -40,6 +42,8 @@ input.inputtekst {
   height: 30px;
   border-style: none;
   padding-left: 10px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 3px #c9c9c9;
   /* Formatering til tekstfelter */
 }
 
@@ -48,7 +52,7 @@ input.inputknap {
   font-size: large;
   width: 200px;
   height: 30px;
-  background-color: #56be88;
+  background-color: #0168ff;
   color: #dfe1e6;
   border-style: none;
   font-family: Rubik;
@@ -56,11 +60,11 @@ input.inputknap {
 }
 
 .inputknap:hover {
-  background-color: #4CA778;
+  background-color: #0051c9;
   /* Farve til når mus er over knap */
 }
 
 .inputknap:focus {
-    background-color: #39845D;
-    /* Farve når man klikker på knap */
+  background-color: #0042a3;
+  /* Farve når man klikker på knap */
 }
