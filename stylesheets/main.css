@@ -1,18 +1,18 @@
 body {
   background-color: #f8f9fb;
-  font-family: Rubik;
+  font-family: Roboto;
   /* Standard skrifttype og baggrundsfarve */
 }
 
 h1 {
   color: #0168ff;
   font-size: xx-large;
-  /* Standard header med farven grøn og skrifttypen Rubik */
+  /* Standard header med farven grøn og skrifttypen Roboto */
 }
 
 p {
-  color: #56be88;
-  /* Standard paragraf med farven grøn og skrifttypen Rubik */
+  color: #47505E;
+  /* Standard paragraf med farven grøn og skrifttypen Roboto */
 }
 
 #loginboks {
@@ -55,7 +55,7 @@ input.inputknap {
   background-color: #0168ff;
   color: #dfe1e6;
   border-style: none;
-  font-family: Rubik;
+  font-family: Roboto;
   /* Formatering til knap */
 }
 
