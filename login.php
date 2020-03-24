@@ -25,7 +25,7 @@
             <br>
             <br>
             <input type="checkbox" value="husk kode" name="husk kode" id="husk kode">
-            <label for="husk kode"><u>Husk Adgangskode?</u></label>
+            <label for="husk kode">Husk Adgangskode?</label>
             <br>
             <br>
             <input class="inputknap" type="submit" value="Log Ind">

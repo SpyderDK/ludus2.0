@@ -18,7 +18,7 @@
         <br>
         <img src="./media/ikoner/hjemikon.svg" alt="hjemknap" class="hjem-knap">
         <br>
-        <img src="./media/ikoner/placeholder.svg" alt="idk" class="placeholder-knap">
+        <img src="./media/ikoner/fravær.svg" alt="fraværsknap" class="fravær-knap">
         <br>
         <img src="./media/ikoner/kalender.svg" alt="kalenderknap" class="kalender-knap">
         <br>
@@ -32,7 +32,14 @@
     </div>
 
     <div class="topbar" id="topbar">
-        <header><b>Dashboard</b></header>
+        <header>
+            <b>Dashboard</b>
+            <div class="ikoner">
+                <img src="./media/ikoner/søgikon.svg" alt="søgikon" class="søg-ikon">
+                <img src="./media/ikoner/klokke.svg" alt="notifikationer" class="notif-ikon">
+                <img src="./media/ikoner/profilikon.svg" alt="profil" class="profil-ikon">
+            </div>
+        </header>
     </div>
 </body>
 

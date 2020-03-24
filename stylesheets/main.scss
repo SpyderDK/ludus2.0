@@ -1,11 +1,17 @@
+$font: Roboto;
+$border-farve: #e7e7e7;
+$baggrunds-farve: #f8f9fb;
+$tema-farve: #0168ff;
+$shadow-farve: #c9c9c9;
+
 body {
-  background-color: #f8f9fb;
-  font-family: Roboto;
+  background-color: $baggrunds-farve;
+  font-family: $font;
   /* Standard skrifttype og baggrundsfarve */
 }
 
 h1 {
-  color: #0168ff;
+  color: $tema-farve;
   font-size: xx-large;
   /* Standard header med farven blå og skrifttypen Roboto */
 }
@@ -22,7 +28,7 @@ p {
   margin: auto;
   background-color: #fdfdfd;
   border-radius: 12px;
-  box-shadow: 1px 1px 3px #c9c9c9;
+  box-shadow: 1px 1px 3px $shadow-farve;
   padding-top: 10px;
   padding-bottom: 40px;
   padding-left: 30px;
@@ -43,7 +49,7 @@ input.inputtekst {
   border-style: none;
   padding-left: 10px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 3px #c9c9c9;
+  box-shadow: 1px 1px 3px $shadow-farve;
   /* Formatering til tekstfelter */
 }
 
@@ -52,10 +58,10 @@ input.inputknap {
   font-size: large;
   width: 200px;
   height: 30px;
-  background-color: #0168ff;
+  background-color: $tema-farve;
   color: #dfe1e6;
   border-style: none;
-  font-family: Roboto;
+  font-family: $font;
   /* Formatering til knap */
 }
 
@@ -70,7 +76,7 @@ input.inputknap {
 }
 
 .sidebar {
-  background-color: #0168ff;
+  background-color: $tema-farve;
   width: 66px;
   height: 100%;
   position: fixed;
@@ -89,14 +95,14 @@ input.inputknap {
     padding-top: 6cm;
   }
 
-  .placeholder-knap {
-    padding-left: 14px;
-    padding-top: 15px;
+  .fravær-knap {
+    padding-left: 22px;
+    padding-top: 16px;
   }
 
   .kalender-knap {
     padding-left: 23px;
-    padding-top: 0.25cm;
+    padding-top: 0.5cm;
   }
 
   .besked-knap {
@@ -122,15 +128,69 @@ input.inputknap {
 
 .topbar {
   background-color: #ffffff;
-  padding-left: 4em;
-  padding-top: .8em;
-  padding-bottom: 1em;
   border-bottom: solid;
-  font-size: 20px;
   color: #47505e;
-  border-color: #e0e0e0;
+  border-color: $border-farve;
   position: fixed;
   width: 100%;
   overflow: hidden;
   top: 0;
+  border-width: 1px;
+  font-size: 20px;
+  padding-left: 4em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .ikoner {
+    display: inline-block;
+    padding-left: 41cm;
+    vertical-align: middle;
+
+    .søg-ikon {
+      padding-bottom: 10.5px;
+      padding-top: 10px;
+      padding-left: 11px;
+      padding-right: 11px;
+
+      /*
+        box-shadow: 1px 1px 3px $shadow-farve;
+      */
+
+      border-radius: 12px;
+      border: solid;
+      border-width: 1px;
+      border-color: $border-farve;
+    }
+
+    .notif-ikon {
+      padding: 9px;
+
+      /*
+      box-shadow: 1px 1px 3px $shadow-farve;
+      */
+
+      border-radius: 12px;
+
+      border: solid;
+      border-width: 1px;
+      border-color: $border-farve;
+    }
+
+    .profil-ikon {
+      padding-top: 9.5px;
+      padding-bottom: 9px;
+      padding-left: 11px;
+      padding-right: 11px;
+
+      /*
+      box-shadow: 1px 1px 3px $shadow-farve;
+      */
+
+      border-radius: 12px;
+
+      border: solid;
+      border-width: 1px;
+      border-color: $border-farve;
+    }
+  }
 }
