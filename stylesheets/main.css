@@ -7,12 +7,12 @@ body {
 h1 {
   color: #0168ff;
   font-size: xx-large;
-  /* Standard header med farven grøn og skrifttypen Roboto */
+  /* Standard header med farven blå og skrifttypen Roboto */
 }
 
 p {
   color: #47505E;
-  /* Standard paragraf med farven grøn og skrifttypen Roboto */
+  /* Standard paragraf med farven grå og skrifttypen Roboto */
 }
 
 #loginboks {
@@ -67,4 +67,8 @@ input.inputknap {
 .inputknap:focus {
   background-color: #0042a3;
   /* Farve når man klikker på knap */
+}
+
+.sidebar {
+  background-color: #0168ff;
 }
