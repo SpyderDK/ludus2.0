@@ -13,7 +13,7 @@
 <body>
     <header class="dashboard">Dashboard</header>
     <div class="sidebar">
-        <img src=".media/hjemknap.svg" alt="logo til lectio" class="min-logo">
+        <img src="./media/hjemknap.svg" alt="logo til lectio" class="min-logo">
     </div>
 </body>
 
