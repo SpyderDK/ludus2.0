@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 
+<?php
+require_once "connect_DB.php";
+?>
+
 <head>
     <title>Log på SkoleIntra</title>
     <meta charset="utf-8">
