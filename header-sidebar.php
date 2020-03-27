@@ -13,32 +13,54 @@
 
 
 <body>
-    <div class="sidebar" id="sidebar">
-        <img src="./media/ikoner/hjemknap.svg" alt="logo til lectio" class="min-logo">
+    <nav class="sidebar" id="sidebar">
+        <a href="forside.php">
+            <img src="./media/ikoner/hjemknap.svg" alt="logo til lectio" class="min-logo">
+        </a>
         <br>
-        <img src="./media/ikoner/hjemikon.svg" alt="hjemknap" class="hjem-knap">
+        <a href="forside.php">
+            <img src="./media/ikoner/hjemikon.svg" alt="hjemknap" class="hjem-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/fravær.svg" alt="fraværsknap" class="fravær-knap">
+        <a href="#">
+            <img src="./media/ikoner/fravær.svg" alt="fraværsknap" class="fravær-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/kalender.svg" alt="kalenderknap" class="kalender-knap">
+        <a href="#">
+            <img src="./media/ikoner/kalender.svg" alt="kalenderknap" class="kalender-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/beskeder.svg" alt="beskedknap" class="besked-knap">
+        <a href="#">
+            <img src="./media/ikoner/beskeder.svg" alt="beskedknap" class="besked-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/opgaver.svg" alt="opgaveknap" class="opgave-knap">
+        <a href="#">
+            <img src="./media/ikoner/opgaver.svg" alt="opgaveknap" class="opgave-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/profil.svg" alt="profilknap" class="profil-knap">
+        <a href="#">
+            <img src="./media/ikoner/profil.svg" alt="profilknap" class="profil-knap">
+        </a>
         <br>
-        <img src="./media/ikoner/indstillinger.svg" alt="indstillinger" class="indstillinger">
-    </div>
+        <a href="#">
+            <img src="./media/ikoner/indstillinger.svg" alt="indstillinger" class="indstillinger">
+        </a>
+    </nav>
 
     <div class="topbar" id="topbar">
         <header>
             <b>Dashboard</b>
-            <div class="ikoner">
-                <img src="./media/ikoner/søgikon.svg" alt="søgikon" class="søg-ikon">
-                <img src="./media/ikoner/klokke.svg" alt="notifikationer" class="notif-ikon">
-                <img src="./media/ikoner/profilikon.svg" alt="profil" class="profil-ikon">
-            </div>
+            <nav class="ikoner">
+                <a href="#">
+                    <img src="./media/ikoner/søgikon.svg" alt="søgikon" class="søg-ikon">
+                </a>
+                <a href="#">
+                    <img src="./media/ikoner/klokke.svg" alt="notifikationer" class="notif-ikon">
+                </a>
+                <a href="#">
+                    <img src="./media/ikoner/profilikon.svg" alt="profil" class="profil-ikon">
+                </a>
+            </nav>
         </header>
     </div>
 </body>
