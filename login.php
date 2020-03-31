@@ -21,17 +21,17 @@ require_once "connect_DB.php";
     </div>
     <div id="loginboks">
         <h1>Log Ind</h1>
-        <form id="logind" action="#" method="post">
-            <input class="inputtekst" type="text" autofocus placeholder="Brugernavn">
+        <form id="logind" action="includes/login.inc.php" method="post">
+            <input class="inputtekst" type="text" name="mailuid" autofocus placeholder="Brugernavn">
             <br>
             <br>
-            <input class="inputtekst" type="password" placeholder="Adgangskode">
+            <input class="inputtekst" type="password" name="pwd" placeholder="Adgangskode">
             <br>
             <br>
             <input type="checkbox" value="husk kode" name="husk kode" id="husk kode">
             <label for="husk kode" class="">Husk Adgangskode?</label>
             <br>
-            <input class="inputknap" type="submit" value="Log Ind">
+            <input class="inputknap" name="login-submit" type="submit" value="Log Ind">
         </form>
     </div>
 
