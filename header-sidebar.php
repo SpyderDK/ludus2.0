@@ -45,17 +45,8 @@
 
     <div class="topbar" id="topbar">
         <header>
-            <b>Dashboard</b>
-            <nav class="ikoner">
-                <a href="#">
-                    <img src="./media/ikoner/søgikon.svg" alt="søgikon" class="søg-ikon">
-                </a>
-                <a href="#">
-                    <img src="./media/ikoner/klokke.svg" alt="notifikationer" class="notif-ikon">
-                </a>
-                <a href="#">
-                    <img src="./media/ikoner/profilikon.svg" alt="profil" class="profil-ikon">
-                </a>
+            <nav>
+                <b>Dashboard</b>
             </nav>
         </header>
     </div>
