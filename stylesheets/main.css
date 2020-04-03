@@ -139,4 +139,42 @@ input.inputknap {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.topbar .ikoner {
+  display: inline-block;
+  list-style: none;
+  padding-left: 73em;
+}
+
+.topbar .ikoner li {
+  display: inline;
+}
+
+.topbar .søgikon, .topbar .notif, .topbar .prfico {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  border-color: #e7e7e7;
+}
+
+.topbar .søgikon {
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 11px;
+}
+
+.topbar .notif {
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 9px;
+}
+
+.topbar .prfico {
+  padding-top: 9px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 /*# sourceMappingURL=main.css.map */
