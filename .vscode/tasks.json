@@ -1,8 +1,29 @@
 {
   "version": "2.0.0",
-  "command": "firefox",
-  "windows": {
-    "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
-  },
-  "args": ["localhost\\${workspaceRootFolderName}\\${fileBasename}"]
+  "tasks": [
+    {
+      "label": "firefox",
+      "command": "firefox",
+      "windows": {
+        "command": "C:\\Program Files\\Mozilla Firefox\\firefox.exe"
+      },
+      "args": [
+        "localhost\\${workspaceRootFolderName}\\${fileBasename}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "chrome",
+      "command": "chrome",
+      "windows": {
+        "command": "filepath"
+      },
+      "args": [
+        "localhost:80.80\\${workspaceRootFolderName}\\${fileBasename}"
+      ]
+    }
+  ]
 }
