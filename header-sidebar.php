@@ -51,7 +51,7 @@
                     <ul>
                         <li class="søgikon"><img src="./media/ikoner/søgikon.svg" alt="søgikon"></li>
                         <li class="notif"><img src="./media/ikoner/klokke.svg" alt="notifikationer"></li>
-                        <li class="prfico"><img src="./media/ikoner/profilikon.svg" alt="profilikon"></li>
+                        <li class="prfico"><img src="./media/ikoner/profilikon.svg" alt="profilikon"> Profil</li>
                     </ul>
                 </span>
             </nav>

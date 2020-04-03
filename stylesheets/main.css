@@ -141,9 +141,10 @@ input.inputknap {
 }
 
 .topbar .ikoner {
+  position: relative;
   display: inline-block;
   list-style: none;
-  padding-left: 73em;
+  padding-left: 75%;
 }
 
 .topbar .ikoner li {
