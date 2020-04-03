@@ -51,7 +51,14 @@
                     <ul>
                         <li class="søgikon"><img src="./media/ikoner/søgikon.svg" alt="søgikon"></li>
                         <li class="notif"><img src="./media/ikoner/klokke.svg" alt="notifikationer"></li>
-                        <li class="prfico"><img src="./media/ikoner/profilikon.svg" alt="profilikon"> Profil</li>
+                        <li class="prfico"><img src="./media/ikoner/profilikon.svg" alt="profilikon">
+                            <a href="#">Profil</a>
+                            <ul class="profildropdown">
+                                <li><a href="#">place</a></li>
+                                <li><a href="#">place</a></li>
+                                <li><a href="#">Log Ud</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </span>
             </nav>

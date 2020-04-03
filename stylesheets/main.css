@@ -78,7 +78,7 @@ input.inputknap {
   width: 66px;
   height: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -138,6 +138,7 @@ input.inputknap {
   padding-left: 4em;
   padding-top: 10px;
   padding-bottom: 10px;
+  z-index: 1;
 }
 
 .topbar .ikoner {
@@ -177,5 +178,32 @@ input.inputknap {
   padding-bottom: 6px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  line-height: 21px;
+  text-align: left;
+}
+
+ul li ul.profildropdown {
+  min-width: 100%;
+  /* Set width of the dropdown */
+  background: #f2f2f2;
+  display: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  overflow: visible;
+}
+
+ul li:hover ul.profildropdown {
+  display: block;
+  /* Display the dropdown */
+}
+
+ul li ul.profildropdown li {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */
