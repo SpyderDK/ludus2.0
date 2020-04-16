@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -60,7 +63,7 @@
                             </ul>
                         </li>
                     </ul>
-                </form>
+                    </form>
                 </span>
             </nav>
         </header>
