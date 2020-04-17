@@ -17,6 +17,25 @@
     </div>
     <div id="loginboks">
         <h1>Opret Bruger</h1>
+        <?php
+        if (isset($_GET['error'])) {
+            if ($_GET['error'] == "emptyfields") {
+                echo '<p class="signuperror">Udfyld alle felter*</p>';
+            } elseif ($_GET['error'] == "invalidemailuid") {
+                echo '<p class="signuperror">Ugyldig email og brugernavn*</p>';
+            } elseif ($_GET['error'] == "invaliduid") {
+                echo '<p class="signuperror">Ugyldigt brugernavn*</p>';
+            } elseif ($_GET['error'] == "invalidemail") {
+                echo '<p class="signuperror">Ugyldig email*</p>';
+            } elseif ($_GET['error'] == "passwordcheck") { //check denne linje
+                echo '<p class="signuperror">Adgangskoder matcher ikke*</p>';
+            } elseif ($_GET['error'] == "usertaken") {
+                echo '<p class="signuperror">Brugernavn er taget*</p>';
+            }
+        } elseif ($_GET['signup'] == "success") {
+            echo '<p class="signupsuccess">Bruger oprettet!</p>';
+        }
+        ?>
         <form id="opretbruger" action="includes/signup.inc.php" method="post">
             <input class="inputtekst" type="text" name="uid" autofocus placeholder="Brugernavn">
             <br>

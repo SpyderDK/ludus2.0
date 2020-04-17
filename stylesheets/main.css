@@ -206,4 +206,12 @@ ul li:hover ul.profildropdown {
 ul li ul.profildropdown li {
   display: block;
 }
+
+.signuperror {
+  color: red;
+}
+
+.signupsuccess {
+  color: green;
+}
 /*# sourceMappingURL=main.css.map */
