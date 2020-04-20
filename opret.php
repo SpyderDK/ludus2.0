@@ -27,13 +27,15 @@
                 echo '<p class="signuperror">Ugyldigt brugernavn*</p>';
             } elseif ($_GET['error'] == "invalidemail") {
                 echo '<p class="signuperror">Ugyldig email*</p>';
-            } elseif ($_GET['error'] == "passwordcheck") { //check denne linje
+            } elseif ($_GET['error'] == "passwordcheck") {
                 echo '<p class="signuperror">Adgangskoder matcher ikke*</p>';
             } elseif ($_GET['error'] == "usertaken") {
                 echo '<p class="signuperror">Brugernavn er taget*</p>';
             }
-        } elseif ($_GET['signup'] == "success") {
-            echo '<p class="signupsuccess">Bruger oprettet!</p>';
+        } elseif (isset($_GET['signup'])) {
+            if ($_GET['signup'] == "success") {
+                echo '<p class="signupsuccess">Bruger Oprettet!</p>';
+            }
         }
         ?>
         <form id="opretbruger" action="includes/signup.inc.php" method="post">
