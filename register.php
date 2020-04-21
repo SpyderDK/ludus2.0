@@ -17,7 +17,7 @@ require_once "connect_DB.php";
 <body>
 
     <div id="logo">
-        <img src="./media/logo ref.png" alt="Logo til SkoleIntra" width="440" height="210">
+        <img src="./Header html-css/L-LOGO.png" alt="Logo til SkoleIntra" width="440" height="210">
     </div>
     <div id="loginboks">
         <h1>Opret Bruger</h1>
