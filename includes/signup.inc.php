@@ -9,7 +9,7 @@ if (isset($_POST['signup-submit'])) {
     $passrepeat = $_POST['pwd-repeat'];
 
     // checker om felterne er udfyldte.
-    if (empty($username) || empty($email) || empty($passrepeat) || empty($password)) {
+    if (empty($username) || empty($email) || empty($password) || empty($passrepeat)) {
         header("Location: ../opret.php?error=emptyfields&uid=" . $username . "&mail=" . $email);
         exit();
     }
@@ -33,7 +33,7 @@ if (isset($_POST['signup-submit'])) {
     }
 
     // checker om kodeordene er ens
-    elseif (!$password == $passrepeat) {
+    elseif ($password !== $passrepeat) {
         header("Location: ../opret.php?error=passwordcheck&uid=" . $username . "&mail=" . $email);
         exit();
     } else {
