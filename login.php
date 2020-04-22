@@ -17,6 +17,26 @@
     </div>
     <div id="loginboks">
         <h1>Log Ind</h1>
+
+        <?php
+        /* laver diverse fejlbeskeder, baseret på forskellige kriterier */
+            if (isset($_GET['error'])) {
+                if ($_GET['error'] == "emptyfields") {
+                    echo '<p class="signuperror">Udfyld alle felter*</p>';
+                } elseif ($_GET['error'] == "sqlerror") {
+                    echo '<p class="signuperror">Kan ikke i oprette forbindelse til database*</p>';
+                } elseif ($_GET['error'] == "wrongcredentials") {
+                    echo '<p class="signuperror">Forkert brugernavn eller adgangskode*</p>';
+                } elseif ($_GET['error'] == "nouser") {
+                    echo '<p class="signuperror">Denne bruger eksisterer ikke</p>';
+                }
+            } elseif(isset($_GET['login'])) {
+                if ($_GET['login'] == "success") {
+                    
+                }
+            }
+        ?>
+
         <form id="logind" action="includes/login.inc.php" method="post">
             <input class="inputtekst" type="text" name="uid" autofocus placeholder="Brugernavn">
             <br>

@@ -44,6 +44,7 @@ if (isset($_POST['signup-submit'])) {
             header("Location: ../opret.php?error=sqlerror");
             exit();
         } else {
+            /* checker om brugernavnet er blevet taget */
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
@@ -53,12 +54,14 @@ if (isset($_POST['signup-submit'])) {
                 header("Location: ../opret.php?error=usertaken&mail=" . $email);
                 exit();
             } else {
+                /* tilføjer brugernavn, email og kode til databasen */
                 $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
 
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../opret.php?error=sqlerror");
                 } else {
+                    /* hasher kode før tilføjelse */
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
                     mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
@@ -69,8 +72,11 @@ if (isset($_POST['signup-submit'])) {
             }
         }
     }
+    /* lukker forbindelsen til databasen */
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
+
+    /* hvis man ikke kommer til denne side via opret knappen, bliver man omdiregeret til selve opret bruger siden */
 } else {
     header("Location: ../opret.php");
     exit();

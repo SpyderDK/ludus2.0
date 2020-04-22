@@ -18,6 +18,7 @@
     <div id="loginboks">
         <h1>Opret Bruger</h1>
         <?php
+        /* laver diverse fejlbeskeder, baseret på forskellige kriterier */
         if (isset($_GET['error'])) {
             if ($_GET['error'] == "emptyfields") {
                 echo '<p class="signuperror">Udfyld alle felter*</p>';
@@ -31,6 +32,8 @@
                 echo '<p class="signuperror">Adgangskoder matcher ikke*</p>';
             } elseif ($_GET['error'] == "usertaken") {
                 echo '<p class="signuperror">Brugernavn er taget*</p>';
+            } elseif ($_GET['error'] == "sqlerror") {
+                echo '<p class="signuperror"> Kan ikke oprette forbindelse til database*</p>';
             }
         } elseif (isset($_GET['signup'])) {
             if ($_GET['signup'] == "success") {
