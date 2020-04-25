@@ -44,12 +44,7 @@
             <input class="inputtekst" type="password" name="pwd" placeholder="Adgangskode">
             <br>
             <br>
-            <input type="checkbox" value="husk kode" name="husk kode" id="husk kode">
-            <label for="husk kode" class="">Husk Adgangskode?</label>
-            <br>
-            <input class="inputknap" name="login-submit" type="submit" value="Log Ind">
-            <br>
-            <a href="opret.php">Opret Bruger</a>
+            <input class="inputknap" name="login-submit" type="submit" value="Log In"/>
         </form>
     </div>
 

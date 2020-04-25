@@ -7,6 +7,8 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['mail'];
     $password = $_POST['pwd'];
     $passrepeat = $_POST['pwd-repeat'];
+    $role = $_POST['rolle'];
+    $school = $_POST['skole'];
 
     // checker om felterne er udfyldte.
     if (empty($username) || empty($email) || empty($password) || empty($passrepeat)) {
@@ -55,7 +57,7 @@ if (isset($_POST['signup-submit'])) {
                 exit();
             } else {
                 /* tilføjer brugernavn, email og kode til databasen */
-                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers, roleUsers, schoolUsers) VALUES (?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
 
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
@@ -64,7 +66,7 @@ if (isset($_POST['signup-submit'])) {
                     /* hasher kode før tilføjelse */
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+                    mysqli_stmt_bind_param($stmt, "sssss", $username, $email, $hashedPwd, $role, $school);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../opret.php?signup=success");
                     exit();

@@ -45,13 +45,36 @@
             <input class="inputtekst" type="text" name="uid" autofocus placeholder="Brugernavn">
             <br>
             <br>
-            <input class="inputtekst" type="text" name="mail" autofocus placeholder="Email">
+            <input class="inputtekst" type="email" name="mail" autofocus placeholder="Email">
             <br>
             <br>
             <input class="inputtekst" type="password" name="pwd" placeholder="Adgangskode">
             <br>
             <br>
             <input class="inputtekst" type="password" name="pwd-repeat" placeholder="Gentag Adgangskode">
+            <br>
+            <br>
+            <p class="bold">Vælg Skole:</p>
+            <select name="skole" id="skoleListe">
+            
+            <?php
+            // går ind i skole database og tilføjer skolenavne til drop-down liste
+            require './includes/dbh.inc.php';
+
+            $sql = mysqli_query($conn, "SELECT nameSchools FROM schools");
+
+            while ($row = $sql->fetch_assoc()) {
+                echo '<option value="'.$row['nameSchools'].'">' . $row['nameSchools'] . '</option>';
+            }
+
+            ?>
+            </select>
+            <br>
+            <br>
+            <input type="radio" name="rolle" id="lærer" value="lærer" checked>
+            <label for="lærer">Lærer</label>
+            <input type="radio" name="rolle" id="elev" value="elev">
+            <label for="elev">Elev</label>
             <br>
             <br>
             <input class="inputknap" name="signup-submit" type="submit" value="Opret Bruger">
