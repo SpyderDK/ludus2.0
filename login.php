@@ -28,7 +28,7 @@
             } elseif ($_GET['error'] == "wrongcredentials") {
                 echo '<p class="signuperror">Forkert brugernavn eller adgangskode*</p>';
             } elseif ($_GET['error'] == "nouser") {
-                echo '<p class="signuperror">Denne bruger eksisterer ikke</p>';
+                echo '<p class="signuperror">Denne bruger eksisterer ikke*</p>';
             }
         } elseif (isset($_GET['login'])) {
             if ($_GET['login'] == "success") {
