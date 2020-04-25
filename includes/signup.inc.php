@@ -56,7 +56,7 @@ if (isset($_POST['signup-submit'])) {
                 header("Location: ../opret.php?error=usertaken&mail=" . $email);
                 exit();
             } else {
-                /* tilføjer brugernavn, email og kode til databasen */
+                /* tilføjer brugernavn, email, kode, rolle og skole til databasen */
                 $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers, roleUsers, schoolUsers) VALUES (?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
 

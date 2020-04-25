@@ -37,7 +37,7 @@
             }
         } elseif (isset($_GET['signup'])) {
             if ($_GET['signup'] == "success") {
-                echo '<p class="signupsuccess">Bruger Oprettet!</p>';
+                echo '<p class="signupsuccess">Bruger Oprettet! Du kan nu logge ind.</p>';
             }
         }
         ?>
@@ -56,18 +56,18 @@
             <br>
             <p class="bold">Vælg Skole:</p>
             <select name="skole" id="skoleListe">
-            
-            <?php
-            // går ind i skole database og tilføjer skolenavne til drop-down liste
-            require './includes/dbh.inc.php';
 
-            $sql = mysqli_query($conn, "SELECT nameSchools FROM schools");
+                <?php
+                // går ind i skole database og tilføjer skolenavne til drop-down liste
+                require './includes/dbh.inc.php';
 
-            while ($row = $sql->fetch_assoc()) {
-                echo '<option value="'.$row['nameSchools'].'">' . $row['nameSchools'] . '</option>';
-            }
+                $sql = mysqli_query($conn, "SELECT nameSchools FROM schools");
 
-            ?>
+                while ($row = $sql->fetch_assoc()) {
+                    echo '<option value="' . $row['nameSchools'] . '">' . $row['nameSchools'] . '</option>';
+                }
+
+                ?>
             </select>
             <br>
             <br>
