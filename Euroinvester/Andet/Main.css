@@ -1,0 +1,143 @@
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-family: sans-serif;
+    color: #111111;
+
+}
+
+img {
+    width: 75%;
+}
+.Header__siteHeader {
+    background-color: white;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+    z-index: 30;
+    position: relative;
+    height: 100px;
+    /*text-transform: uppercase;*/
+    }
+    
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 1000px;
+        max-width: 1040px;
+        }
+
+        .row {
+            display: block;
+        }
+    .Header_LogoColoum-logo {
+        width: 174px;
+        padding: 23px 0 17px;
+        margin: 0 ;
+        display: block;
+            
+        }
+
+
+.Header__siteHeader .Header__MenuColumn .Header__menuColumn-menuList {
+    display: flex;
+            align-items: center;
+            vertical-align: bottom;
+            position: relative;
+            padding-top: 30px;
+            padding-bottom: 8px;
+            text-align: right;
+                    margin-top: 0px;
+}
+
+.Header__siteHeader .Header__MenuColumn .Header__menuColumn-menuList .Header__menuItem {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    list-style-type: none;
+    padding: 0 46px;
+    border-bottom: 0;
+    position: relative;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.Header__siteHeader .Header__MenuColumn .Header__menuColumn-menuList .Header__menuItem .Header__menuItem-link {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #616161;
+    line-height: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.Header__siteHeader .Header__menuItem--search button {
+    margin-right: 45px;
+    border: 0;
+    width: 30px;
+    height: 26px;
+    display: flex;
+    color: grey;
+    background: url(1200px-Feedbin-Icon-home-search.svg.png) no-repeat 7px 6px;
+        background-image: url(1200px-Feedbin-Icon-home-search.svg.png);
+        background-position-x: 7px;
+        background-position-y: 6px;
+        background-size: initial;
+        background-position-x: no-repeat;
+        background-position-y: no-repeat;
+        background-attachment: initial;
+        background-origin: initial;
+        background-clip: initial;
+        background-color: initial;
+}
+//////////////////////// USIKKER BULLSHIT ////////////////////////
+.Header__siteHeader .Header__menuItem--hamburger-menu button {
+    /*width: 24px;
+    height: 26px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: #ffffff;*/
+    width: 24px;
+    height: 26px;
+    background: white;
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+}
+    .Header__iconMenu {
+        position: absolute;
+        background: 616161;
+        height: 2px;
+        width: 24px;
+        right: 0;
+        top: 50%;
+    }
+
+        ::before,
+        ::after {
+            content: '';
+            background: 616161;
+            height: 2px;
+            width: 24px;
+            position: absolute;
+            left: 0;
+        }
+
+        ::before {
+            top: -7px;
+        }
+
+        ::after {
+            bottom: -7px;
+        }
+        
