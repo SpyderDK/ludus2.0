@@ -7,6 +7,8 @@ if (isset($_POST['signup-submit'])) {
     $email = $_POST['mail'];
     $password = $_POST['pwd'];
     $passrepeat = $_POST['pwd-repeat'];
+    $role = $_POST['rolle'];
+    $school = $_POST['skole'];
 
     // checker om felterne er udfyldte.
     if (empty($username) || empty($email) || empty($password) || empty($passrepeat)) {
@@ -44,6 +46,7 @@ if (isset($_POST['signup-submit'])) {
             header("Location: ../opret.php?error=sqlerror");
             exit();
         } else {
+            /* checker om brugernavnet er blevet taget */
             mysqli_stmt_bind_param($stmt, "s", $username);
             mysqli_stmt_execute($stmt);
             mysqli_stmt_store_result($stmt);
@@ -53,15 +56,17 @@ if (isset($_POST['signup-submit'])) {
                 header("Location: ../opret.php?error=usertaken&mail=" . $email);
                 exit();
             } else {
-                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers) VALUES (?, ?, ?)";
+                /* tilføjer brugernavn, email, kode, rolle og skole til databasen */
+                $sql = "INSERT INTO users (uidUsers, emailUsers, pwdUsers, roleUsers, schoolUsers) VALUES (?, ?, ?, ?, ?)";
                 $stmt = mysqli_stmt_init($conn);
 
                 if (!mysqli_stmt_prepare($stmt, $sql)) {
                     header("Location: ../opret.php?error=sqlerror");
                 } else {
+                    /* hasher kode før tilføjelse */
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+                    mysqli_stmt_bind_param($stmt, "sssss", $username, $email, $hashedPwd, $role, $school);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../opret.php?signup=success");
                     exit();
@@ -69,8 +74,11 @@ if (isset($_POST['signup-submit'])) {
             }
         }
     }
+    /* lukker forbindelsen til databasen */
     mysqli_stmt_close($stmt);
     mysqli_close($conn);
+
+    /* hvis man ikke kommer til denne side via opret knappen, bliver man omdiregeret til selve opret bruger siden */
 } else {
     header("Location: ../opret.php");
     exit();
