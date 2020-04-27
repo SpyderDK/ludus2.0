@@ -1,3 +1,7 @@
+<?php
+// starter en session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="da">
 <head>

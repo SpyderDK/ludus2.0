@@ -40,6 +40,10 @@ if (isset($_POST['login-submit'])) {
 
                     header("Location: ../login.php?login=success");
                     exit();
+                    
+                    // venter tre sekunder og omstiller så til forside
+                    sleep(3);
+                    header("Location: ../skole.dk/body.php");
                 } else {
                     header("Location: ../login.php?error=wrongcredentials");
                     exit();
@@ -50,7 +54,6 @@ if (isset($_POST['login-submit'])) {
             }
         }
     }
-    header("Location: ../forside.php");
 
 } else {
     /* hvis man ikke kommer til denne side via opret knappen, bliver man omdiregeret til selve login siden */

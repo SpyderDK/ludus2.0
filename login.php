@@ -13,7 +13,7 @@
 <body>
 
     <div id="logo">
-        <img src="./Header html-css/L-LOGO.png" alt="Logo til SkoleIntra" class="logo-img">
+        <img src="./media/L-LOGO ny.png" alt="Logo til SkoleIntra" class="logo-img">
     </div>
     <div id="loginboks">
         <h1>Log Ind</h1>
@@ -61,7 +61,7 @@
             </select>
             <br>
             <br>
-            <input class="inputknap" name="login-submit" type="submit" value="Log In" />
+            <input class="inputknap" name="login-submit" type="submit" value="Log In">
         </form>
     </div>
 
